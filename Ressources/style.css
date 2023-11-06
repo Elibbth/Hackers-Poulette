@@ -1,0 +1,12 @@
+body {
+  height: auto;
+  width: auto;
+  background: linear-gradient(167deg, rgb(79, 36, 120) 2%, rgba(179, 66, 207, 0) 60%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Fredoka";
+}
+body legend {
+  font-family: "Philosopher";
+  color: white;
+}/*# sourceMappingURL=style.css.map */
