@@ -1,12 +1,36 @@
 body {
   height: auto;
   width: auto;
-  background: linear-gradient(167deg, rgb(79, 36, 120) 2%, rgba(179, 66, 207, 0) 60%);
+  background: linear-gradient(167deg, rgb(13, 129, 135) 0%, rgba(13, 129, 135, 0.1994047619) 60%);
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Fredoka";
+  font-family: "Fredoka", sans-serif;
+}
+body .img {
+  float: inline-end;
 }
 body legend {
-  font-family: "Philosopher";
+  font-family: "Bellota", sans-serif;
+  font-size: large;
+  font-weight: bold;
   color: white;
+}
+body legend label {
+  color: #303030;
+}
+body button {
+  font-family: "Bellota", sans-serif;
+  font-weight: bold;
+  background-color: #f3f7fe;
+  color: rgb(79, 36, 120);
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 25px;
+  transition: 0.3s;
+}
+body button:hover {
+  background-color: rgba(102, 24, 150, 0.3725490196);
+  box-shadow: 0 0 0 5px rgba(102, 24, 150, 0.3725490196);
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
