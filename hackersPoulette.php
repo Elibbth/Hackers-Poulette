@@ -30,17 +30,17 @@
         
         if (empty($nom) || !preg_match("/^[a-zA-Z -]+$/", $nom)) {
             $erreur = true;
-            $_SESSION['erreur_nom'] = "Le champ nom est invalide. Veuillez le corriger.";
+            $_SESSION['erreur_nom'] = "Le champ -nom- est invalide. Veuillez le corriger.";
         }
         
         if (empty($prenom) || !preg_match("/^[a-zA-Z -]+$/", $prenom)) {
             $erreur = true;
-            $_SESSION['erreur_prenom'] = "Le champ prénom est invalide. Veuillez le corriger.";
+            $_SESSION['erreur_prenom'] = "Le champ -prénom- est invalide. Veuillez le corriger.";
         }
         
         if (empty($country) || !preg_match("/^[a-zA-Z -]+$/", $country)) {
             $erreur = true;
-            $_SESSION['erreur_country'] = "Le champ pays est invalide. Veuillez le corriger.";
+            $_SESSION['erreur_country'] = "Le champ -pays- est invalide. Veuillez le corriger.";
         }
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -109,7 +109,7 @@
                                 }
                             ?>
                             <br>
-                        <label for="prenom">Prénom: </label>
+                        <label for="prenom"><i class="fa-regular fa-circle-user"></i> Prénom: </label>
                             <br>
                             <input id="prenom" type="text" name="prenom" placeholder="firstname" required>
                             <?php
@@ -172,7 +172,14 @@
         </fieldset>
     </div>
     <footer>
-
+        <div>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/elisabeth-leyder/">Linkedin</a></li>
+                <li><a href="https://facebook.com/elibbth">Facebook</a></li>
+                <li><a href="https://github.com/Elibbth/Hackers-Poulette">Github</a></li>
+                <li><p><i class="fa-regular fa-hand-peace" style="color: #ffffff;"></i></p></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
