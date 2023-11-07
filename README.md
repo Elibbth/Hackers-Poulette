@@ -32,6 +32,8 @@ Vous devriez également être capable de :
 
     HTML
     PHP
+    SCSS
+    JS
 
 #### Outils :
 
