@@ -1,14 +1,47 @@
 body {
     height: auto;
     width: auto;
-    background: linear-gradient(167deg, rgba(13,129,135,1) 0%, rgba(13,129,135,0.19940476190476186) 60%);
+    background: rgb(25,31,34);
+    background: linear-gradient(167deg, rgba(25,31,34,1) 0%, rgba(36,121,144,1) 75%);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Fredoka", sans-serif;
     .img {
         float: inline-end;
+        
     }
+    header {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        
+        .logoWhite {
+            width: 10%;
+            float: left;
+        }
+        h1 {
+            font-family: 'Bellota', sans-serif;
+            color: #fff;
+            font-weight: 900;
+            font-size: xx-large;
+        }
+    }
+    .form {
+        background: rgb(16,131,137);
+        background: linear-gradient(167deg, rgba(16,131,137,1) 0%, rgba(249,251,251,1) 100%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        padding: 20px;
+        width: 50%;
+        fieldset {
+            border: #fff solid 2px;
+            .alert.alert-danger {
+                color: #8f006e;
+            }
+        }
     
+    }
     legend {
         font-family: "Bellota", sans-serif;
         font-size: large;

@@ -83,10 +83,17 @@
 
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <a class="buttonMenu" href="#"><img src="Ressources/overview hackersPoulette.png" class="logoWhite" alt="logoWhiteHackersPoulette"></a>
+            <h1>Hackers Poulette</h1>
+        </nav>
+    </header>
     <div class="img">
         <img src="Ressources/hackers-poulette-logo.png" alt="logo">
     </div>
-    <div>
+
+    <div class="form">
         <fieldset class="formulaire">
             <legend>Formulaire de contact </legend>
             <form method="POST" action="hackersPoulette.php">
@@ -98,7 +105,7 @@
                             <?php
                                 if (isset($_SESSION['erreur_nom'])) {
                                     echo '<div class="alert alert-danger">' . $_SESSION['erreur_nom'] . '</div>';
-                                    unset($_SESSION['erreur_nom']); // Effacer le message d'erreur après l'avoir affiché
+                                    unset($_SESSION['erreur_nom']); // Efface le message d'erreur après l'avoir affiché
                                 }
                             ?>
                             <br>
@@ -108,7 +115,7 @@
                             <?php
                                 if (isset($_SESSION['erreur_prenom'])) {
                                     echo '<div class="alert alert-danger">' . $_SESSION['erreur_prenom'] . '</div>';
-                                    unset($_SESSION['erreur_prenom']); // Effacer le message d'erreur après l'avoir affiché
+                                    unset($_SESSION['erreur_prenom']); // Efface le message d'erreur après l'avoir affiché
                                 }
                             ?>
                             <br>
@@ -118,7 +125,7 @@
                             <?php
                                 if (isset($_SESSION['erreur_country'])) {
                                     echo '<div class="alert alert-danger">' . $_SESSION['erreur_country'] . '</div>';
-                                    unset($_SESSION['erreur_country']); // Effacer le message d'erreur après l'avoir affiché
+                                    unset($_SESSION['erreur_country']); // Efface le message d'erreur après l'avoir affiché
                                 }
                             ?>
                             <br>
@@ -154,7 +161,7 @@
                             <?php
                                 if (isset($_SESSION['erreur_email'])) {
                                     echo '<div class="alert alert-danger">' . $_SESSION['erreur_email'] . '</div>';
-                                    unset($_SESSION['erreur_email']); // Effacer le message d'erreur après l'avoir affiché
+                                    unset($_SESSION['erreur_email']); // Efface le message d'erreur après l'avoir affiché
                                 }
                             ?>
                             <br>

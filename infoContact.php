@@ -17,19 +17,20 @@
         $message = filter_input(INPUT_POST, 'message', FILTER_UNSAFE_RAW);
         // Nettoyer les autres champs du formulaire si nécessaire
 
-        // Utilisation de regex pour vérifier que le nom contient des lettres, des espaces et des tirets
+        // Utilise regex pour vérifier que le nom contient des lettres, des espaces et des tirets
         if (preg_match("/^[a-zA-Z -]+$/", $nom)) {
-            // Le nom est valide
+            // si le nom est valide
         } else {
-            // Le nom contient des caractères non autorisés
-            $_SESSION['erreur_nom'] = "Des caractères spéciaux ont été détectés dans le champ nom. Veuillez les supprimer.";
+            // sinon le nom contient des caractères non autorisés
+            $_SESSION['erreur_nom'] = "Des caractères spéciaux ont été détectés dans le champ nom. Veuillez corriger.";
         }
 
-        // Utilisation de filter_var pour valider l'adresse email
+        // Utilise  -filter_var- pour valider l'adresse email
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // L'adresse email est valide
         } else {
             // L'adresse email est invalide
+            $_SESSION['erreur_email'] = "Votre adresse email n'est pas valide.";
         }
 
         // Traitement du formulaire

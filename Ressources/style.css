@@ -1,13 +1,44 @@
 body {
   height: auto;
   width: auto;
-  background: linear-gradient(167deg, rgb(13, 129, 135) 0%, rgba(13, 129, 135, 0.1994047619) 60%);
+  background: rgb(25, 31, 34);
+  background: linear-gradient(167deg, rgb(25, 31, 34) 0%, rgb(36, 121, 144) 75%);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Fredoka", sans-serif;
 }
 body .img {
   float: inline-end;
+}
+body header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+body header .logoWhite {
+  width: 10%;
+  float: left;
+}
+body header h1 {
+  font-family: "Bellota", sans-serif;
+  color: #fff;
+  font-weight: 900;
+  font-size: xx-large;
+}
+body .form {
+  background: rgb(16, 131, 137);
+  background: linear-gradient(167deg, rgb(16, 131, 137) 0%, rgb(249, 251, 251) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 20px;
+  width: 50%;
+}
+body .form fieldset {
+  border: #fff solid 2px;
+}
+body .form fieldset .alert.alert-danger {
+  color: #8f006e;
 }
 body legend {
   font-family: "Bellota", sans-serif;
