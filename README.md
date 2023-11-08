@@ -2,7 +2,7 @@
 Projet Solo - PHP
 # Hackers Poulette (PHP)
 
-- Créer un outil pour gérer nos projets 
+- Créer un formulaire "propre" 
 
 
     - Créez un dépôt public :Hackers Poulette
@@ -32,6 +32,8 @@ Vous devriez également être capable de :
 
     HTML
     PHP
+    SCSS
+    JS
 
 #### Outils :
 
