@@ -50,27 +50,27 @@
 
         if (!$erreur) {
             // Tout est valide, envoyons l'e-mail et affichons la confirmation
-            echo '<script>alert("Merci, votre demande a bien été envoyée.")</script>'; 
+            echo '<script>alert("Merci, votre demande a bien été envoyée.") </script>'; 
         
 
-            // $destinataire = "adresse_email_destinataire@example.com";
-            // $sujet = "Nouveau formulaire soumis";
+            $destinataire = "admin@wampserver.invalid";
+            $sujet = "Nouveau formulaire soumis";
 
-            // $message = "Nom: " . $nom . "\n";
-            // $message .= "Prénom: " . $prenom . "\n";
-            // $message .= "Genre: " . $genre . "\n";
-            // $message .= "Sujets: " . $sujets . "\n";
-            // $message .= "Email: " . $email . "\n";
-            // $message .= "Pays: " . $country . "\n";
-            // $message .= "Message: " . $message . "\n";
+            $messages = "Nom: " . $nom . "\n";
+            $messages .= "Prénom: " . $prenom . "\n";
+            $messages .= "Genre: " . $genre . "\n";
+            $messages .= "Sujets: " . $sujets . "\n";
+            $messages .= "Email: " . $email . "\n";
+            $messages .= "Pays: " . $country . "\n";
+            $messages .= "Message: " . $message . "\n";
 
-            // $headers = "From: " . $email;
+            $headers = "From: " . $email;
 
-            // if (mail($destinataire, $sujet, $message, $headers)) {
-            //     $_SESSION['confirmation'] = "Votre formulaire a été envoyé avec succès.";
-            // } else {
-            //     $_SESSION['erreur_envoi_email'] = "Une erreur s'est produite lors de l'envoi du formulaire.";
-            // }
+            if (mail($destinataire, $sujet, $messages, $headers)) {
+                $_SESSION['confirmation'] = "Votre formulaire a été envoyé avec succès.";
+            } else {
+                $_SESSION['erreur_envoi_email'] = "Une erreur s'est produite lors de l'envoi du formulaire.";
+            }
         }
 
         // Traitement du formulaire
@@ -142,7 +142,7 @@
                 </fieldset>
                 <fieldset class="request">
                     <legend>Requête:</legend>
-                        <label for="sujets"><i class="fa-solid fa-circle-question"></i> Motif du message ?</label>
+                        <label for="sujets"><i class="fa-brands fa-raspberry-pi"></i> Motif du message ?</label>
                             <select id="sujets" name="sujets">
                                 <option value="autres">Autres:</option>
                                 <option value="apresVente">Service après-vente</option>
@@ -177,7 +177,7 @@
                 <li><a href="https://www.linkedin.com/in/elisabeth-leyder/">Linkedin</a></li>
                 <li><a href="https://facebook.com/elibbth">Facebook</a></li>
                 <li><a href="https://github.com/Elibbth/Hackers-Poulette">Github</a></li>
-                <li><p><i class="fa-regular fa-hand-peace" style="color: #ffffff;"></i></p></li>
+                <li><p><i class="fa-brands fa-raspberry-pi" style="color: #ffffff;"></i></p></li>
             </ul>
         </div>
     </footer>
